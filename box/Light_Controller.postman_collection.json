@@ -1,0 +1,110 @@
+{
+	"info": {
+		"_postman_id": "7daeb295-3abb-44cf-a5a3-6fb105f8986e",
+		"name": "Light_Controller",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "info",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{ip}}/info",
+					"protocol": "http",
+					"host": [
+						"{{ip}}"
+					],
+					"path": [
+						"info"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "brightness",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{ip}}/brightness?brightness=5",
+					"protocol": "http",
+					"host": [
+						"{{ip}}"
+					],
+					"path": [
+						"brightness"
+					],
+					"query": [
+						{
+							"key": "brightness",
+							"value": "5"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "color",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{ip}}/color?red=255&green=128&blue=0",
+					"protocol": "http",
+					"host": [
+						"{{ip}}"
+					],
+					"path": [
+						"color"
+					],
+					"query": [
+						{
+							"key": "red",
+							"value": "255"
+						},
+						{
+							"key": "green",
+							"value": "128"
+						},
+						{
+							"key": "blue",
+							"value": "0"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "ip",
+			"value": "192.168.178.106",
+			"type": "default"
+		}
+	]
+}
