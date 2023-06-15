@@ -1,6 +1,8 @@
 # Camera Quantificator
 ### Test setup to quantify the camera performance of Android smartphones, camera libraries and under different lighting conditions.
 
+![image of box](images/box.jpg)
+
 - [Motives](#motives)
 - [Workflow](#workflow)
 
