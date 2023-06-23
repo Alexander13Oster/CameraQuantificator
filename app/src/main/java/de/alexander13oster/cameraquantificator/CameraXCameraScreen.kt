@@ -18,7 +18,9 @@ import androidx.core.content.ContextCompat
 import java.time.ZonedDateTime
 
 @Composable
-fun CameraScreen() {
+fun CameraXCameraScreen(
+    navigateToResult: (String) -> Unit
+) {
     val localContext = LocalContext.current
     val lifecycleOwner = LocalLifecycleOwner.current
     val cameraProviderFuture = remember {
@@ -44,7 +46,7 @@ fun CameraScreen() {
                 ContextCompat.getMainExecutor(context),
                 BarcodeAnalyzer {
                     logScanDuration(started)
-                    Toast.makeText(context, it, Toast.LENGTH_SHORT).show()
+                    navigateToResult(it)
                 }
             )
 

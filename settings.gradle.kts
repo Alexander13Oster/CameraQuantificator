@@ -16,3 +16,4 @@ rootProject.name = "CameraQuantificator"
 include(":app")
 include(":barcodeapp")
 include(":shared")
+include(":benchmark")
