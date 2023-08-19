@@ -5,12 +5,12 @@ plugins {
 
 android {
     namespace = "de.alexander13oster.cameraquantificator"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "de.alexander13oster.cameraquantificator"
         minSdk = 26
-        targetSdk = 33
+        targetSdk = 34
         versionCode = 1
         versionName = "1.0"
 
@@ -37,7 +37,7 @@ android {
         compose = true
     }
     composeOptions {
-        kotlinCompilerExtensionVersion = "1.4.4"
+        kotlinCompilerExtensionVersion = "1.5.1"
     }
     packagingOptions {
         resources {
@@ -47,7 +47,7 @@ android {
 }
 
 dependencies {
-    implementation(platform("androidx.compose:compose-bom:2023.04.00"))
+    implementation(platform("androidx.compose:compose-bom:2023.08.00"))
 
     implementation("androidx.core:core-ktx:1.10.1")
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.6.1")
@@ -62,7 +62,7 @@ dependencies {
     implementation("androidx.camera:camera-lifecycle:1.2.3")
     implementation("androidx.camera:camera-view:1.2.3")
 
-    implementation("com.google.mlkit:barcode-scanning:17.1.0")
+    implementation("com.google.mlkit:barcode-scanning:17.2.0")
 
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")

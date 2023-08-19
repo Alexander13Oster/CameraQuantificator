@@ -7,8 +7,8 @@ buildscript {
         gradlePluginPortal()
     }
     dependencies {
-        classpath("com.android.tools.build:gradle:8.0.2")
-        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:1.8.10")
+        classpath("com.android.tools.build:gradle:8.1.0")
+        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:1.9.0")
 
         classpath("org.jlleitschuh.gradle:ktlint-gradle:9.2.1")
         classpath("io.gitlab.arturbosch.detekt:detekt-gradle-plugin:1.22.0")
