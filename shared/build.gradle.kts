@@ -31,5 +31,5 @@ android {
 }
 
 dependencies {
-    api("com.journeyapps:zxing-android-embedded:4.2.0")
+    api("com.journeyapps:zxing-android-embedded:4.3.0")
 }
