@@ -1,4 +1,4 @@
-package de.alexander13oster.cameraquantificator
+package de.alexander13oster.cameraquantificator.scanner.mlkit
 
 import android.annotation.SuppressLint
 import androidx.camera.core.ImageAnalysis

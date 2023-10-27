@@ -3,7 +3,7 @@ package de.alexander13oster.barcodeapp
 import android.content.res.Configuration
 import android.graphics.Bitmap
 import androidx.compose.foundation.Image
-import androidx.compose.material.Text
+import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.graphics.asImageBitmap
 import androidx.compose.ui.tooling.preview.Preview

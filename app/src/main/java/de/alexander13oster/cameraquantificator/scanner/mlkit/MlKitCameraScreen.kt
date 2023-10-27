@@ -1,7 +1,6 @@
-package de.alexander13oster.cameraquantificator
+package de.alexander13oster.cameraquantificator.scanner.mlkit
 
 import android.util.Log
-import android.widget.Toast
 import androidx.camera.core.CameraSelector
 import androidx.camera.core.ImageAnalysis
 import androidx.camera.core.Preview
@@ -18,7 +17,9 @@ import androidx.core.content.ContextCompat
 import java.time.ZonedDateTime
 
 @Composable
-fun CameraScreen() {
+fun MlKitCameraScreen(
+    onScanResult: (String) -> Unit,
+) {
     val localContext = LocalContext.current
     val lifecycleOwner = LocalLifecycleOwner.current
     val cameraProviderFuture = remember {
@@ -44,7 +45,8 @@ fun CameraScreen() {
                 ContextCompat.getMainExecutor(context),
                 BarcodeAnalyzer {
                     logScanDuration(started)
-                    Toast.makeText(context, it, Toast.LENGTH_SHORT).show()
+                    //Toast.makeText(context, it, Toast.LENGTH_SHORT).show()
+                    onScanResult(it)
                 }
             )
 

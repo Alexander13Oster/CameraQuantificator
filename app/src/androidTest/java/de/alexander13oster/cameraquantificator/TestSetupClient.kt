@@ -10,7 +10,7 @@ import okhttp3.RequestBody.Companion.toRequestBody
 import okhttp3.Response
 
 class TestSetupClient {
-    var client: OkHttpClient = OkHttpClient()
+    private var client: OkHttpClient = OkHttpClient()
 
     fun changeBrightness(brightness: Int): Response {
         val url: HttpUrl = HttpUrl.Builder()
@@ -30,6 +30,7 @@ class TestSetupClient {
     fun changeBarcode(barcode: Barcode): Response {
         val url: HttpUrl = HttpUrl.Builder()
             .scheme("http")
+
             .host(IP_BARCODE_APP)
             .port(8080)
             .addPathSegment("barcode")
@@ -47,7 +48,7 @@ class TestSetupClient {
 
     companion object {
         private const val IP_LIGHT_CONTROLLER = "192.168.178.106"
-        private const val IP_BARCODE_APP = "192.168.178.68"
+        private const val IP_BARCODE_APP = "192.168.178.123"
 
         private val MEDIA_TYPE_JSON = "application/json; charset=utf-8".toMediaTypeOrNull()
     }

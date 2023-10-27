@@ -8,7 +8,7 @@ android {
     compileSdk = 34
 
     defaultConfig {
-        minSdk = 24
+        minSdk = 21
         targetSdk = 34
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
@@ -31,5 +31,5 @@ android {
 }
 
 dependencies {
-    api("com.journeyapps:zxing-android-embedded:4.3.0")
+    api(libs.zxing.android.embedded)
 }
